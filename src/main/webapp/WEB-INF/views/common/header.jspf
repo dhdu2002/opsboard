@@ -1,0 +1,23 @@
+<%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= request.getAttribute("pageTitle") != null ? request.getAttribute("pageTitle") : "OpsBoard" %></title>
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/assets/css/app.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="${pageContext.request.contextPath}/assets/js/app.js"></script>
+</head>
+<body>
+<header class="app-header">
+    <h1>OpsBoard</h1>
+    <nav>
+        <a href="${pageContext.request.contextPath}/home">대시보드</a>
+        <a href="${pageContext.request.contextPath}/servers">서버</a>
+        <a href="${pageContext.request.contextPath}/sites">사이트/관리페이지</a>
+        <a href="${pageContext.request.contextPath}/accounts">계정</a>
+        <a href="${pageContext.request.contextPath}/issues">이슈</a>
+    </nav>
+</header>
+<main class="app-main">
