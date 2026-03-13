@@ -20,8 +20,10 @@ mvn clean package
 1. 빌드된 `target/opsboard.war` 확인
 2. 내부 톰캣 서버의 `webapps`에 배포
 3. 서버 기동 후 `/opsboard` 경로 접속
+4. 운영 전 `docs/TOMCAT-ONLY.md` 체크리스트 점검
 
 ## 5) Current Scope
 - 권한 구분 없음 (요청사항 반영)
 - VPN 제한 없음 (요청사항 반영)
 - 백업 구성 없음 (요청사항 반영)
+- CRUD는 메모리 기반으로 동작 (DB 저장 연동은 추후 구현)
